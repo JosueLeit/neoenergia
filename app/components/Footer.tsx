@@ -8,13 +8,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-8 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/4/46/Neoenergia_%28logomarca%29.svg"
-              alt="Logo Neoenergia"
-              width={200}
-              height={60}
-              className="mb-4"
-            />
+            <div className="w-56 h-16 relative mb-4 bg-white rounded-lg p-2">
+              <Image
+                src="/neoenergia-logo-png.png"
+                alt="Logo Neoenergia"
+                fill
+                className="object-contain"
+              />
+            </div>
             <p className="text-gray-300">
               Transformando energia em desenvolvimento sustentável para o Brasil.
             </p>

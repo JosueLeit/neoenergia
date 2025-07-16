@@ -2,6 +2,9 @@ import Image from "next/image"
 import { Shield, Users, BarChart3, Percent, Search, PiggyBank, CheckCircle2, FileText, Building2, Zap } from "lucide-react"
 import { WhatsAppButton } from "./components/WhatsAppButton"
 import { Footer } from "./components/Footer"
+import { EnergyCalculator } from "./components/EnergyCalculator"
+import { TestimonialsCarousel } from "./components/TestimonialsCarousel"
+import { ProjectGallery } from "./components/ProjectGallery"
 
 export default function Home() {
   return (
@@ -21,7 +24,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 h-[300px] md:h-auto relative">
             <Image
-              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=600&w=800&auto="
+              src="/solar-panels.png"
               alt="Painéis solares"
               fill
               className="object-cover"
@@ -261,10 +264,23 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Energy Calculator Section */}
+        <section className="py-16 px-8 md:px-16 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <EnergyCalculator />
+          </div>
+        </section>
+
+        {/* Project Gallery Section */}
+        <ProjectGallery />
+
+        {/* Testimonials Section */}
+        <TestimonialsCarousel />
+
         {/* Form Section */}
         <section className="py-16 px-8 md:px-16 bg-gray-50">
           <h2 className="text-3xl font-bold text-[#0A3B1D] mb-12 text-center">
-            Descubra quanto sua empresa pode economizar
+            Fale com nossos especialistas
           </h2>
 
           <div className="max-w-2xl mx-auto">
